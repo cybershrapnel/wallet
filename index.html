@@ -258,11 +258,27 @@ button:disabled {
 </form>
 
    <script>
+
+    function disableButtonTemporarily(button) {
+        // Disable the button
+        button.disabled = true;
+
+        // Re-enable the button after 5 seconds
+        setTimeout(() => {
+            button.disabled = false;
+        }, 5000);
+    }
+
     // Function to handle form submission
 async function handleSubmit(event, url, resultElementId) {
     event.preventDefault();
     const form = event.target;
+        const button = form.querySelector("button");
+        disableButtonTemporarily(button); // Disable the button for 5 seconds
+
     const data = new FormData(form);
+
+
     const jsonData = Object.fromEntries(data.entries());
 
     try {
