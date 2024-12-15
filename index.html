@@ -305,34 +305,34 @@ async function handleSubmit(event, url, resultElementId) {
 
     // Add event listeners for form submissions
     document.getElementById("createAccountForm").addEventListener("submit", (e) =>
-        handleSubmit(e, "/create_account", "createAccountResult")
+        handleSubmit(e, "https://rpc.nanocheeze.com:5000/create_account", "createAccountResult")
     );
 
     document.getElementById("getBalanceForm").addEventListener("submit", (e) =>
-        handleSubmit(e, "/get_balance", "getBalanceResult")
+        handleSubmit(e, "https://rpc.nanocheeze.com:5000/get_balance", "getBalanceResult")
     );
 
     document.getElementById("sendFundsForm").addEventListener("submit", (e) =>
-        handleSubmit(e, "/send_funds", "sendFundsResult")
+        handleSubmit(e, "https://rpc.nanocheeze.com:5000/send_funds", "sendFundsResult")
     );
 
     document.getElementById("listTransactionsForm").addEventListener("submit", (e) =>
-        handleSubmit(e, "/list_transactions", "listTransactionsResult")
+        handleSubmit(e, "https://rpc.nanocheeze.com:5000/list_transactions", "listTransactionsResult")
     );
 
     document.getElementById("changePasswordForm").addEventListener("submit", (e) =>
-        handleSubmit(e, "/change_password", "changePasswordResult")
+        handleSubmit(e, "https://rpc.nanocheeze.com:5000/change_password", "changePasswordResult")
     );
 
     document.getElementById("changeCertTxidForm").addEventListener("submit", (e) =>
-        handleSubmit(e, "/change_cert_txid", "changeCertTxidResult")
+        handleSubmit(e, "https://rpc.nanocheeze.com:5000/change_cert_txid", "changeCertTxidResult")
     );
 
     document.getElementById("changeEmailForm").addEventListener("submit", (e) =>
-        handleSubmit(e, "/change_email", "changeEmailResult")
+        handleSubmit(e, "https://rpc.nanocheeze.com:5000/change_email", "changeEmailResult")
     );
 document.getElementById("getAirdropForm").addEventListener("submit", (e) =>
-    handleSubmit(e, "/get_airdrop", "getAirdropResult")
+    handleSubmit(e, "https://rpc.nanocheeze.com:5000/get_airdrop", "getAirdropResult")
 );
 
 function disableButtonTemporarily(button) {
